@@ -1,0 +1,66 @@
+ body {
+    background-color: salmon;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+ .start,.players-num {
+    width:50%;
+    background: white;
+    height: fit-content;
+    margin: 160px auto;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.players-num h1{
+        color: rgba(250, 128, 114, 0.677);
+}
+
+.start h2 {
+    color: #d77b7b;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.start input {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 16px;
+    border: 2px solid #f2c7c5;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #633c48;
+    transition: 0.3s;
+}
+
+.start input:focus {
+    outline: none;
+    border-color: salmon;
+}
+
+
+.btn {
+    width: 38%;
+    background: rgba(250, 128, 114, 0.677);
+    color: white;
+    border: none;
+    padding: 6px 30px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d96860;
+    transform: translateY(-3px);
+}  

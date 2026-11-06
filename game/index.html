@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div class="container">
+         <h1>Let's Play!!</h1>
+         <!-- Start Round -->
+        <button id="start" class="startbtn"> Start </button>
+        <div id="gamescreen">
+            <!-- Players Names -->
+            <div class="players">
+                <span id="player1"></span>
+                <span>vs</span>
+                <span id="player2"></span>
+            </div>
+          <!-- players hands+moves+score -->
+            <div class="player-col">
+                <!-- Players Hands -->
+                <div id="players-hand" class="hands">   
+                        <img id="player1-hand" class="img1" src="Rock.png" alt="Player 1 hand">
+                        <div id="roundWinner" class="round-winner"> <span id="winner"></span></div>
+                        <img id="player2-hand" class="img2" src="Rock.png" alt="Player 2 hand">    
+                </div>
+                <!-- players score -->
+                <div class="score-count">
+                        <div class="score-box"> score : <span id="player1score"></span></div>
+                        <div class="score-box"> score: <span id="player2score"></span></div>
+                </div>
+                <!-- players moves -->
+                <div id="playersmoves" class="players-moves">
+                    <div  id="handMoves1" class="moves">
+                            <div id="rock" class="move" onclick="player1choose('rock')" ><img class="hand-icon" src="Rock.png"></div>
+                            <div id="paper" class="move" onclick="player1choose('paper')" ><img class="hand-icon" src="Paper.png"></div>        
+                            <div id="scissors" class="move" onclick="player1choose('scissors')" ><img class="hand-icon" src="Scissors.png"></div>
+                    </div>
+                    <div  id="handMoves2" class="moves">
+                            <div id="rock" class="move" onclick="player2choose('rock')"><img class="hand-icon" src="Rock.png"></div>
+                            <div id="paper" class="move" onclick="player2choose('paper')"  ><img class="hand-icon" src="Paper.png"></div>        
+                            <div id="scissors" class="move" onclick="player2choose('scissors')"  ><img class="hand-icon" src="Scissors.png"></div>
+                    </div>
+                </div>
+           </div>      
+
+          <!-- Rounds Counter -->
+            <div class="rounds">
+                Round <span id="roundNum">0</span>
+            </div>
+
+            <!-- Final Winner -->
+           <div class="winner" id="winner-box">
+              <p> <i class="fa-solid fa-trophy fa-width-auto" style="color: rgb(255, 212, 59);"></i>THE WINNER IS</p>
+              <h1 id="finalWinner"> </h1> 
+              <h3>Final score</h3>
+              <div class="finalscorebox">
+                <div class="box"> <span id="player1Final"></span> : <span id="player1scoreFinal"></span>  </div>
+                <div class="box"> <span id="player2Final"></span> : <span id="player2scoreFinal"></span>  </div>
+              </div>
+          </div>
+
+            <!-- Bottom Buttons -->
+            <div class="bottom-btn">
+                <!-- restart -->
+                <button id="restart" class="btn" onclick="restart()"> Restart </button>
+                <!-- end -->
+                <button id="endBtn" class="btn" onclick="endGame()">End Game</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styels1.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+    <div id="playersNumScreen" class="players-num" hidden>
+        <h1>Choose number of players</h1>
+        <button class="btn" onclick="chooseMode('single')">Single player</button>
+        <button class="btn" onclick="chooseMode('multi')">two players</button>
+    </div>
+
+    <form  action="game/index.html" onsubmit="data()">
+    <div id="enterScreen" class="start"  hidden>
+        <h2>Enter your Name</h2>
+        <input type="text" id="player1Name" placeholder="Player 1 Name">
+        <br>
+        <input type="text" id="player2Name" placeholder="Player 2 Name">
+        <br>
+        <button type="submit" class="btn"> Start Game </button>
+    </div>
+    </form> 
+    
+<script src="main1.js"></script>
+</body>
+</html>
